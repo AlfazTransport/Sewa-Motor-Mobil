@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #fff7ed;
+    color: #1f2937;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: 100%;
+    background: #7f1d1d;
+
+    padding: 18px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.logo-text span {
+    color: #fb923c;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+    margin-left: 22px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #fb923c;
+}
+
+
+.admin-login {
+    background: #f97316;
+
+    color: white !important;
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.admin-login:hover {
+    background: #ea580c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7f1d1d,
+            #991b1b 55%,
+            #ea580c
+        );
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+
+.hero p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #fed7aa;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+
+.btn-wa {
+    background: #f97316;
+
+    color: white;
+}
+
+
+.btn-wa:hover {
+    background: #ea580c;
+
+    transform: translateY(-2px);
+}
+
+
+.btn-map {
+    background: white;
+
+    color: #7f1d1d;
+
+    border: 1px solid #fed7aa;
+}
+
+
+.btn-map:hover {
+    background: #fff7ed;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    padding: 70px 7%;
+}
+
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-title h2 {
+    font-size: 32px;
+
+    color: #7f1d1d;
+
+    margin-bottom: 10px;
+}
+
+
+.section-title p {
+    color: #78716c;
+}
+
+
+/* =========================
+   VEHICLES
+========================= */
+
+.vehicles {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.vehicle-card {
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px
+        rgba(127, 29, 29, 0.10);
+
+    transition: 0.3s;
+
+    border: 1px solid #fed7aa;
+}
+
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(127, 29, 29, 0.15);
+}
+
+
+/* =========================
+   FOTO KENDARAAN
+========================= */
+
+.vehicle-image {
+    height: 180px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7f1d1d,
+            #c2410c
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.vehicle-content {
+    padding: 22px;
+}
+
+
+.vehicle-content h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+
+    color: #7f1d1d;
+}
+
+
+.price {
+    color: #ea580c;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.price small {
+    font-size: 13px;
+
+    color: #78716c;
+
+    font-weight: normal;
+}
+
+
+.vehicle-content p {
+    color: #78716c;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+
+.vehicle-content .btn {
+    width: 100%;
+
+    text-align: center;
+
+    margin: 0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+}
+
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.about-content p {
+    color: #78716c;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-box {
+    background: white;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(127, 29, 29, 0.08);
+
+    text-align: center;
+
+    border: 1px solid #fed7aa;
+}
+
+
+.location-box p {
+    color: #78716c;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #450a0a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+footer p {
+    color: #fed7aa;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+
+    .nav-menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 5px;
+    }
+
+
+    nav a {
+        margin-left: 8px;
+
+        margin-right: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .admin-login {
+        padding: 7px 10px;
+    }
+
+
+    .hero {
+        padding: 60px 5%;
+
+        min-height: 480px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    section {
+        padding: 55px 5%;
+    }
+
+
+    .vehicles {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+}

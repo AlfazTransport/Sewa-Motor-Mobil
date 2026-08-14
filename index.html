@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Alfaz Transport - Rental motor terpercaya dengan harga terjangkau."
+    >
+
+    <title>Alfaz Transport - Rental Motor&Mobil</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: #fff7ed;
+            color: #1f2937;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            width: 100%;
+            background: #7f1d1d;
+
+            padding: 16px 7%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 100;
+
+            box-shadow:
+                0 3px 15px rgba(0, 0, 0, .18);
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: #fb923c;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            background: white;
+
+            padding: 3px;
+        }
+
+
+        .logo-text span {
+            color: white;
+        }
+
+
+        nav .menu {
+            display: flex;
+            align-items: center;
+        }
+
+
+        nav a {
+            text-decoration: none;
+
+            color: white;
+
+            margin-left: 22px;
+
+            font-size: 14px;
+
+            transition: .3s;
+        }
+
+
+        nav a:hover {
+            color: #fb923c;
+        }
+
+
+        .admin-login {
+            background: #f97316;
+
+            color: white !important;
+
+            padding: 10px 16px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            margin-left: 22px;
+        }
+
+
+        .admin-login:hover {
+            background: #ea580c;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 530px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 70px 7%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7f1d1d,
+                    #991b1b 55%,
+                    #ea580c
+                );
+
+            color: white;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 350px;
+            height: 350px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.05);
+
+            right: -100px;
+            top: -100px;
+        }
+
+
+        .hero-content {
+            max-width: 760px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .hero-badge {
+            display: inline-block;
+
+            background: rgba(255,255,255,.12);
+
+            border: 1px solid rgba(255,255,255,.2);
+
+            padding: 8px 15px;
+
+            border-radius: 30px;
+
+            margin-bottom: 20px;
+
+            color: #fed7aa;
+
+            font-size: 13px;
+        }
+
+
+        .hero h1 {
+            font-size: 52px;
+
+            line-height: 1.15;
+
+            margin-bottom: 20px;
+
+            color: white;
+        }
+
+
+        .hero h1 span {
+            color: #fb923c;
+        }
+
+
+        .hero p {
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #fed7aa;
+
+            margin-bottom: 30px;
+
+            max-width: 700px;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .btn {
+            display: inline-block;
+
+            padding: 14px 24px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            margin-right: 10px;
+
+            margin-bottom: 10px;
+
+            transition: .3s;
+        }
+
+
+        .btn-wa {
+            background: #f97316;
+
+            color: white;
+        }
+
+
+        .btn-wa:hover {
+            background: #ea580c;
+
+            transform: translateY(-2px);
+        }
+
+
+        .btn-map {
+            background: white;
+
+            color: #7f1d1d;
+
+            border: 1px solid #fed7aa;
+        }
+
+
+        .btn-map:hover {
+            background: #fff7ed;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+            padding: 75px 7%;
+        }
+
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+
+        .section-title h2 {
+            font-size: 32px;
+
+            color: #7f1d1d;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title p {
+            color: #78716c;
+        }
+
+
+        /* =========================
+           VEHICLES
+        ========================= */
+
+        .vehicles {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        .vehicle-card {
+            background: white;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px rgba(127,29,29,.10);
+
+            transition: .3s;
+
+            border:
+                1px solid #fed7aa;
+        }
+
+
+        .vehicle-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 12px 30px rgba(127,29,29,.17);
+        }
+
+
+        /* =========================
+           FOTO KENDARAAN
+        ========================= */
+
+        .vehicle-image {
+            height: 210px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7f1d1d,
+                    #c2410c
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: .4s;
+        }
+
+
+        .vehicle-card:hover
+        .vehicle-image img {
+            transform: scale(1.05);
+        }
+
+
+        .vehicle-image .no-image {
+            font-size: 65px;
+        }
+
+
+        .vehicle-content {
+            padding: 22px;
+        }
+
+
+        .vehicle-content h3 {
+            font-size: 21px;
+
+            margin-bottom: 10px;
+
+            color: #7f1d1d;
+        }
+
+
+        .price {
+            color: #ea580c;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        .price small {
+            font-size: 13px;
+
+            color: #78716c;
+
+            font-weight: normal;
+        }
+
+
+        .vehicle-content p {
+            color: #78716c;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+            margin-bottom: 18px;
+
+            min-height: 45px;
+        }
+
+
+        .vehicle-content .btn {
+            width: 100%;
+
+            text-align: center;
+
+            margin: 0;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+
+        .about-content {
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .about-content p {
+            color: #78716c;
+
+            line-height: 1.8;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            max-width: 1000px;
+
+            margin: 40px auto 0;
+        }
+
+
+        .feature {
+            text-align: center;
+
+            background: #fff7ed;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            border: 1px solid #fed7aa;
+        }
+
+
+        .feature-icon {
+            font-size: 35px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .feature h3 {
+            color: #7f1d1d;
+
+            margin-bottom: 8px;
+        }
+
+
+        .feature p {
+            color: #78716c;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           LOCATION
+        ========================= */
+
+        .location-box {
+            background: white;
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 35px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px rgba(127,29,29,.08);
+
+            text-align: center;
+
+            border:
+                1px solid #fed7aa;
+        }
+
+
+        .location-icon {
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .location-box h3 {
+            color: #7f1d1d;
+
+            margin-bottom: 10px;
+        }
+
+
+        .location-box p {
+            color: #78716c;
+
+            margin-bottom: 20px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #450a0a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px;
+        }
+
+
+        footer .footer-logo {
+            color: #fb923c;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        footer p {
+            color: #fed7aa;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .vehicles {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .features {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 14px 5%;
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            nav .menu {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 5px;
+            }
+
+
+            nav a {
+                margin-left: 8px;
+                margin-right: 8px;
+
+                font-size: 12px;
+            }
+
+
+            .admin-login {
+                margin-left: 8px;
+            }
+
+
+            .hero {
+                padding: 60px 5%;
+
+                min-height: 500px;
+            }
+
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+
+            .hero p {
+                font-size: 16px;
+            }
+
+
+            section {
+                padding: 55px 5%;
+            }
+
+
+            .vehicles {
+                grid-template-columns: 1fr;
+            }
+
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+
+            .section-title h2 {
+                font-size: 27px;
+            }
+
+
+            .vehicle-image {
+                height: 220px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .logo {
+                font-size: 19px;
+            }
+
+
+            .logo img {
+                width: 40px;
+                height: 40px;
+            }
+
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+
+            .btn {
+                width: 100%;
+
+                text-align: center;
+
+                margin-right: 0;
+            }
+
+
+            .location-box {
+                padding: 25px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <!--
+                GANTI LINK LOGO DI SINI
+            -->
+
+            <img
+                src="https://scontent.cdninstagram.com/v/t51.82787-19/740917501_17907180537442076_6689903093905625688_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMyIn0%3D&_nc_ohc=We1WtGI8E_cQ7kNvwHZmdjT&_nc_oc=Ado2qjsFuaV1Bd7m2xmeaLGAOMJeMvslbelOms27hjX2aNxjSEMbEZ7qAlJoOQSajWTLBwLMHuTYlH5fKS582m6V&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=wrt10EIbTc9j9ZkRZCOkFg&_nc_ss=78689&oh=00_AQFSMxyWaRp2tZETTJ-oUt6jiRsPbDc1G08TQDn4ZEf62Q&oe=6A84AB16"
+                alt="Logo Alfaz Transport"
+            >
+
+            <div class="logo-text">
+                Alfaz <span>Transport</span>
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <a href="#home">
+                Home
+            </a>
+
+
+            <a href="#motor">
+                Motor
+            </a>
+
+
+            <a href="#tentang">
+                Tentang
+            </a>
+
+
+            <a href="#lokasi">
+                Lokasi
+            </a>
+
+
+            <a
+                href="#kontak"
+                class="admin-login"
+            >
+                Kontak
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                🛵 Rental Motor & Mobil Terpercaya
+
+            </div>
+
+
+            <h1>
+
+                Sewa Motor & Mobil
+                <span>Mudah & Cepat</span>
+
+            </h1>
+
+
+            <p>
+
+                Alfaz Transport menyediakan layanan
+                rental kendaraan terpercaya dengan
+                harga terjangkau untuk kebutuhan
+                perjalanan Anda.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20motor."
+                target="_blank"
+                class="btn btn-wa"
+            >
+
+                💬 Pesan via WhatsApp
+
+            </a>
+
+
+            <a
+                href="https://www.google.com/maps/place/Alfaz+Transport+Garage+%7C+Sewa+Motor+Dan+Mobil+%7C+24+Jam+Stasiun+Tugu+YK/@-7.7896885,110.3587201,17z/data=!3m1!4b1!4m6!3m5!1s0x2e7a59a6a9e07ecd:0x3401651363cd65ef!8m2!3d-7.7896885!4d110.3587201!16s%2Fg%2F11n48rkqn0?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="btn btn-map"
+            >
+
+                📍 Alfaz Transport
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MOTOR
+    ========================= -->
+
+    <section id="motor">
+
+
+        <div class="section-title">
+
+            <h2>
+                Pilihan Motor & Mobil
+            </h2>
+
+
+            <p>
+                Pilih kendaraan yang sesuai
+                dengan kebutuhan perjalanan Anda.
+            </p>
+
+        </div>
+
+
+
+        <div class="vehicles">
+
+
+            <!-- HONDA SCOOPY -->
+
+            <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://i0.wp.com/beritamotor.net/wp-content/uploads/2019/02/Honda-Scoopy-Tebaru-2019-Stylish-White.jpg?resize=1500%2C971&ssl=1"
+                        alt="Honda Scoopy"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Honda Scoopy OLD 2020
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp80.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor matic nyaman dan irit
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Honda%20Scoopy."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HONDA BEAT -->
+
+            <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://radarbanyumas.disway.id//upload/b1f74f1c2cd010abb5df436c66c4f77a.png"
+                        alt="Honda Beat new 2025-2026"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Honda Beat new 2025-2026
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp75.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor matic nyaman untuk
+                        perjalanan dalam kota.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Honda%20Beatnew2025-2026."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HONDA Beat -->
+
+            <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://media.indozone.id/crop/0x0:0x0/images/2025/07/27/QEXFNC94hPUhWMaKBWIr40qOL0NV4GZwP2D5JPkO.png"
+                        alt="Honda Beat Street 2025-2026"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Honda Beat Street 2025-2026
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp75.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor nyaman untuk
+                        perjalanan jauh.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Honda%20BeatStreet2025-2026."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Genio NEW 2025-2026 -->
+
+            <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://imgcdn.oto.com/medium/gallery/color/73/2177/honda-genio-color-961061.jpg"
+                        alt="Genio NEW 2025-2026"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Genio NEW 2025-2026
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp80.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Genio%20NEW%202025-2026."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- VARIO LED NEW 125 cc 2025 -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYoOx7nwbfNyO94EO6PeeOqUjsQ5HqNG-qlAcETIrss-noMFEu5oOszng1&s=10"
+                        alt="Vario LED new 125 cc 2025"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Vario LED new 125 cc 2025
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp90.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Vario%20LED%20new%20125%20cc%202025."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+           
+            <!-- SCOOPY NEW 2025-2026 -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://statik.tempo.co/data/2025/01/08/id_1367745/1367745_720.jpg"
+                        alt="Scoopy NEW 2025-2026"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Scoopy NEW 2025-2026
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp85.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Scoopy%20NEW%202025-2026."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+          
+
+               <!-- VARIO LED NEW 125 cc 2025 -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYoOx7nwbfNyO94EO6PeeOqUjsQ5HqNG-qlAcETIrss-noMFEu5oOszng1&s=10"
+                        alt="Vario LED new 125 cc 2025"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        Vario LED new 125 cc 2025
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp90.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20Vario%20LED%20new%20125%20cc%202025."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+           
+            <!-- PCX NEW 160 CC 2025-2026 -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2024/12/06/fitur-fitur-canggih-new-honda-pc-20241206011639.jpg"
+                        alt="PCX NEW 160 CC 2025-2026"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        PCX NEW 160 CC 2025-2026
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp130.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20PCX%20NEW%20160%20CC%202025-2026."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+              
+
+             <!-- NMAX -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbmwST7ZTTi_63bfnkkBPevYfuBJuIwHDI8tbv_hJdw&s=10"
+                        alt="NMAX"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        NMAX
+                    </h3>
+
+
+                    <div class="price">
+
+                        Rp130.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+
+                        Motor dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20NMAX."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- NEW AVANZA FWD(AT/MT) -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmgwGkxO0kZQQ3IKIPSSPuHLZJCT26qhL_4Vf9pZbidw&s=10"
+                        alt="NEW AVANZA FWD(AT/MT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        NEW AVANZA FWD(AT/MT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp325.000(MT) / Rp350.000(AT)
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20NEW%20AVANZA%20FWD(AT/MT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+         
+
+
+
+            <!-- AVANZA FACELIFT(AT/MT)  -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://rentalmobildaviz199.id/wp-content/uploads/2024/12/Toyota-Avanza-Facelift.jpg"
+                        alt="AVANZA FACELIFT(AT/MT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        AVANZA FACELIFT(AT/MT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp275.000(MT) / Rp300.000(AT)
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20AVANZA%20FACELIFT(AT/MT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+           
+
+
+             <!-- NEW BRIO (AT)  -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYE8CZBXrSPPBmTJnZRYG5N1LVc_g4olJCIlv4xqPtZA&s=10"
+                        alt="NEW BRIO (AT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        NEW BRIO (AT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp300.000(AT)
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20NEW%20BRIO%20(AT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            
+
+            <!-- CALYA (MT)  -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://toyotacianjur.com/wp-content/uploads/2022/03/calya2022.jpeg"
+                        alt="CALYA (MT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        CALYA (MT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp275.000(MT)
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20CALYA%20(MT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NEW VELOZ FWD(AT)  -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yndMNRPrdlJQXyf04X0vT-iYANgoeVJFPzk2m472MM2i8Jmf5pHApYQQ&s=10"
+                        alt="NEW VELOZ FWD(AT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        NEW VELOZ FWD(AT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp375.000(MT)
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20NEW%20VELOZ%20FWD(AT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+             <!-- INNOVA REBORN(AT/MT)  -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://res.cloudinary.com/mufautoshow/image/upload/f_auto,f_auto/w_1200/v1608086374/moas/news/1604391565_toyota-innova-reborn-ini-dia-spesifikasi-dan-fitur-barunya.jpg"
+                        alt="INNOVA REBORN(AT/MT)"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        INNOVA REBORN(AT/MT)
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp500.000
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20INNOVA%20REBORN(AT/MT)."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HIACE COMMUTER -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://d1g6w7sntckt92.cloudfront.net/public/images/car_gallery_images/7LzbvzaR4VS68QKolptkTvTytOt3CuiEQNOmaSpZ.jpg"
+                        alt="HIACE COMMUTER"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        HIACE COMMUTER
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp1.200.000 inc driver+BBM
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20HIACE%20COMMUTER."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- HIACE PREMIO -->
+           <div class="vehicle-card">
+
+
+                <div class="vehicle-image">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-FoBqSg4A7AxEA90eJGZqy2kplinDT-kTovsQ4ysZA&s=10"
+                        alt="HIACE PREMIO"
+                    >
+
+                </div>
+
+
+                <div class="vehicle-content">
+
+                    <h3>
+                        HIACE PREMIO
+                    </h3>
+
+
+                    <div class="price">
+                     
+                        Rp1.400.000 inc driver+BBM
+
+                        <small>
+                            / hari
+                        </small>
+
+                    </div>
+
+
+                    <p>
+                        Mobil dengan performa nyaman
+                        untuk perjalanan.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa%20HIACE%20PREMIO."
+                        target="_blank"
+                        class="btn btn-wa"
+                    >
+
+                        Pesan Sekarang
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TENTANG
+    ========================= -->
+
+    <section
+        class="about"
+        id="tentang"
+    >
+
+
+        <div class="section-title">
+
+            <h2>
+                Tentang Alfaz Transport
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+
+                Alfaz Transport menyediakan layanan
+                rental motor yang terpercaya, nyaman,
+                dan siap digunakan untuk berbagai
+                kebutuhan perjalanan Anda.
+
+                Kami menyediakan berbagai pilihan
+                kendaraan dengan harga yang terjangkau
+                serta proses pemesanan yang mudah.
+
+            </p>
+
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Harga Terjangkau
+                    </h3>
+
+                    <p>
+                        Harga sewa bersahabat untuk
+                        kebutuhan perjalanan Anda.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        🛵
+                    </div>
+
+                    <h3>
+                        Kendaraan Nyaman
+                    </h3>
+
+                    <p>
+                        Pilihan kendaraan siap digunakan
+                        untuk perjalanan Anda.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Proses Mudah
+                    </h3>
+
+                    <p>
+                        Pemesanan kendaraan dilakukan
+                        dengan cepat melalui WhatsApp.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         LOKASI
+    ========================= -->
+
+    <section id="lokasi">
+
+
+        <div class="section-title">
+
+            <h2>
+                Lokasi Rental
+            </h2>
+
+
+            <p>
+                Datang langsung ke lokasi
+                Alfaz Transport.
+            </p>
+
+        </div>
+
+
+        <div class="location-box">
+
+
+            <div class="location-icon">
+                📍
+            </div>
+
+
+            <h3>
+                Alfaz Transport
+            </h3>
+
+
+            <p>
+
+                Yogyakarta, Indonesia
+
+            </p>
+
+
+            <a
+                href="https://www.google.com/maps/place/Alfaz+Transport+Garage+%7C+Sewa+Motor+Dan+Mobil+%7C+24+Jam+Stasiun+Tugu+YK/@-7.7896885,110.3587201,17z/data=!3m1!4b1!4m6!3m5!1s0x2e7a59a6a9e07ecd:0x3401651363cd65ef!8m2!3d-7.7896885!4d110.3587201!16s%2Fg%2F11n48rkqn0?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="btn btn-map"
+            >
+
+                📍 Buka Google Maps & Rute
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         KONTAK
+    ========================= -->
+
+    <section
+        class="about"
+        id="kontak"
+    >
+
+
+        <div class="section-title">
+
+            <h2>
+                Hubungi Kami
+            </h2>
+
+
+            <p>
+                Siap membantu kebutuhan rental
+                kendaraan Anda.
+            </p>
+
+        </div>
+
+
+        <div
+            class="location-box"
+        >
+
+            <p>
+                Klik tombol di bawah untuk
+                melakukan pemesanan melalui WhatsApp.
+            </p>
+
+
+            <a
+                href="https://wa.me/6281234567890?text=Halo%20Alfaz%20Transport%2C%20saya%20ingin%20menyewa."
+                target="_blank"
+                class="btn btn-wa"
+            >
+
+                💬 Chat WhatsApp
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            Alfaz Transport
+
+        </div>
+
+
+        <p>
+
+            © 2026 Alfaz Transport.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
